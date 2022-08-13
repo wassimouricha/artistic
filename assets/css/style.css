@@ -1,0 +1,45 @@
+
+
+body {
+    height: 100vh;
+}
+
+
+
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+    background: red;
+    }
+    
+    .nav { grid-area: 1 / 1 / 2 / 13; 
+        border-bottom: 2px solid black;
+    }
+
+    .side { grid-area: 2 / 1 / 8 / 3; 
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+    }
+    .main { grid-area: 2 / 3 / 8 / 9;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    background-image: url("assets/img/art.jpg");
+    }
+
+    .right { grid-area: 2 / 9 / 8 / 13; 
+        border-bottom: 2px solid black;
+    }
+
+    .footer-left { grid-area: 8 / 1 / 9 / 9; 
+    }
+
+    .footer-right { grid-area: 8 / 9 / 9 / 13;
+    
+    }
