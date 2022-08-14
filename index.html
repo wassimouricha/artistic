@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Unicons -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
       <!-- Main CSS -->
       <link rel="stylesheet" href="assets/css/style.css">
       <title>Artistic</title>
 </head>
 <body>
 
+    <aside class="sidebar" id="sidebar">
+        <nav class="navi">
+
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link ">Accueil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">A propos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experiences" class="nav__link">Experiences</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">Projets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+                
+            </div>
+        </nav>
+</aside>
+
     <div class="parent">
         <!-- menu navigation -->
         <div class="nav"> 
             <div class="logo">
                     ARTISTIC
-                    <span class="burger"></span>
+                    <span class="burger" id="burger"></span>
             </div>
 
                  
@@ -56,5 +86,8 @@
 
         </div>
     
+      <!-- Main js -->
+      <script src="assets/js/main.js"></script>
 </body>
+
 </html>
