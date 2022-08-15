@@ -278,3 +278,42 @@ body {
         border-radius: 50%;
         background: black;
     }
+
+    @media screen and (max-width: 576px) {
+        .parent {display: block;}
+
+        .nav {
+            transform: translateY(70%);
+        
+        }
+
+        .side {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            transform: rotate(90deg) translateY(-130%);
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .main {
+            height: 400px;
+        }
+
+        .right {
+            height: 400px;
+        }
+
+        .overlap {
+            height: 80%;
+            z-index: -10;
+        }
+
+        .footer-left {
+            margin-right: 30px;
+        }
+        .footer-right {
+            border-left: none;
+            padding: 20px;
+        }
+    }
